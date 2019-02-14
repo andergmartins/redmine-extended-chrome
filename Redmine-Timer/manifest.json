@@ -1,0 +1,16 @@
+{
+  "name": "Redmine Extended",
+  "version": "1.4",
+  "description": "A Redmine extension for time track.",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery-1.5.min.js","redmine.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
